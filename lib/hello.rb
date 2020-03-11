@@ -16,3 +16,9 @@ hello_t(["Tim","Tom","Jim"]) do |name|
     puts "Hi, #{name}"
  end
 end
+
+def yield_example
+	puts "Hi I'm having a nice day."
+	yield if block_given?
+	puts "How did you get here?!"
+end
